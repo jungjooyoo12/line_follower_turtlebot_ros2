@@ -43,7 +43,7 @@ def colorthresh(frame):
     return res, frame, hsv, mask
 
 if __name__ == '__main__':
-    frame = cv.imread("img.png")
+    frame = cv.imread("../images/img.png")
     #frame = cv.imread(cv.samples.findFile("starry_night.jpg"))
 
     res, frame, hsv, mask = colorthresh(frame)
