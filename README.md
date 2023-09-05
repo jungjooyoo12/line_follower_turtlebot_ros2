@@ -9,7 +9,7 @@ Line following TurtleBot in ROS2, forked from [line\_follower\_turtlebot](https:
 ## Run
 
 ```
-ros2 launch line_follower display.launch.py
+ros2 launch follow_line display.launch.py
 cd src
 python detect.py
 python motion_node.py
