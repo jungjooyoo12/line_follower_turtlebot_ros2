@@ -1,5 +1,4 @@
 import os
-
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.substitutions import LaunchConfiguration
@@ -42,7 +41,7 @@ def generate_launch_description():
 
     spawn_turtlebot_cmd = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(pkg_tb3_gazebo, 'launch', 'spawn_turtlebot3.launch.py')
+                os.path.join(pkg_tb3_gazebo, 'launch', 'empty_turtlebot3.launch.py')
             ),
             launch_arguments={
                 'x_pose': x_pose,
