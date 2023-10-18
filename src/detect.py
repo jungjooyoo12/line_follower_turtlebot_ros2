@@ -1,14 +1,12 @@
-from functools import partial
+#!/usr/bin/env python3
 
+from functools import partial
 import rclpy
 from rclpy.node import Node
-
-import std_msgs.msg
+import std_msgs.msg 
 import sensor_msgs.msg
-
 from cv_bridge import CvBridge
-import cv2 as cv
-
+import cv2 as cv2
 import linedetect
 
 def detect_line_and_publish(pub, cvb, msg):
