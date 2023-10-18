@@ -1,8 +1,7 @@
+#!/usr/bin/env python3
 from functools import partial
-
 import rclpy
 from rclpy.node import Node
-
 import std_msgs.msg
 import sensor_msgs.msg 
 import geometry_msgs.msg
