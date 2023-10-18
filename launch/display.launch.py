@@ -12,7 +12,7 @@ def generate_launch_description():
     pkg_tb3_gazebo = FindPackageShare(package='turtlebot3_gazebo').find('turtlebot3_gazebo')
     _pkg_tb3_bringup = FindPackageShare(package='turtlebot3_bringup').find('turtlebot3_bringup')
     
-    pkg_share = FindPackageShare(package='turtlebot3_gazebo').find('turtlebot3_gazebo')
+    pkg_share = FindPackageShare(package='follow_line').find('follow_line')
     default_world_path = os.path.join(pkg_share, 'maps', 'lfm2_nowalls.world')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
