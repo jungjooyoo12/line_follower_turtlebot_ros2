@@ -10,7 +10,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')
     pkg_tb3_gazebo = FindPackageShare(package='turtlebot3_gazebo').find('turtlebot3_gazebo')
-    _pkg_tb3_bringup = FindPackageShare(package='turtlebot3_bringup').find('turtlebot3_bringup')
+    pkg_tb3_bringup = FindPackageShare(package='turtlebot3_bringup').find('turtlebot3_bringup')
     
     pkg_share = FindPackageShare(package='follow_line').find('follow_line')
     default_world_path = os.path.join(pkg_share, 'maps', 'lfm2_nowalls.world')
