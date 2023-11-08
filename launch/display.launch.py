@@ -13,7 +13,7 @@ def generate_launch_description():
     pkg_tb3_bringup = FindPackageShare(package='turtlebot3_bringup').find('turtlebot3_bringup')
     
     pkg_share = FindPackageShare(package='follow_line').find('follow_line')
-    default_world_path = os.path.join(pkg_share, 'maps', 'lfm2_nowalls.world')
+    default_world_path = os.path.join(pkg_share, 'maps', 'lfm4.world')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     x_pose = LaunchConfiguration('x_pose', default='0.0')
